@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body{
+    background-color: #FFF7EE;
+}
+
+nav{
+    background-color: #FFF7EE;
+    width: 100%;
+}
+
+nav .menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu ul{
+    display: flex;
+    color: #0000;
+    list-style: none;
+}
+
+.menu li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding:0px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color:#d8b527;
+}
+
+.mobile{
+    display: none;
+}
+
+.mobile ul{
+    display: flex;
+    color: #0000;
+    list-style: none;
+}
+
+.mobile li a{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 10px ;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#d8b527;
+}
+
+/*inicio banner*/
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+    max-height: 100rem;
+    background-image: url('../imagem/Moderna.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*inicio da arte*/
+
+.Quemsomos{
+    display: flex;
+    border-color: #FFF7EE;
+}
+
+.container_qs{
+    column-count: 2;
+}
+
+.container_qs h1{
+    text-align: center;
+    font-size: 45px;
+    padding: 20px;
+    color: #F4AE3E;
+    font-family: fantasy;
+}
+
+.text_qs{
+    padding: 2rem 4rem ;
+
+}
+
+.img_qs img{
+    height: 45rem;
+    max-width: 32rem;
+    margin: 0rem 6rem;
+}
+
+
+.alugueis{
+    background-color: #FFF7EE;
+    text-align: center;
+    margin: 25px;
+}
+.alugueis h1{
+    padding: 1px;
+    font-size: 60px;
+    color: #F4AE3E;
+}
+.container_alu{
+
+    justify-content: space-between;
+    column-count: 3;
+}
+
+.container_alu p{
+    font-size: 38px;
+    color: #F4AE3E;
+}
+
+.container_alu img{
+    border: 4px solid #d8b527;
+    width: 385px;
+    padding: 5px;
+    height: 584px;
+    max-height: 1420px;
+    border-color: #F4AE3E;
+}
+
+.image img{
+    width: 469px;
+    border: 5px solid rgba(223, 63, 0, 0.5);
+}
+
+.container_van{
+    background-color: #FEF7F1;    
+}
+
+.container_van h1{
+    text-align: center;
+    font-size: 65px;
+    padding: 20px;
+    color: #F4AE3E;
+    font-family: fantasy;
+}
+
+.img_van{
+    column-count: 2;
+}
+
+.img_van img{
+    height: 45rem;
+    max-width: 32rem;
+    margin: 0rem 6rem;
+}
+
+.roda{
+    display: flex;
+    height: 20rem;
+    max-height: 100rem;
+    background-image: url('../imagem/roda.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.contato {
+    column-count: 3;
+    text-align: center;
+}
+
+
+.email h1{
+    padding: 5px;
+    color: #7D5C34;
+}
+
+.email p{
+    padding: 2px;
+    color: #F4AE3E;
+}
+
+.redes img{
+    margin: 50px 0px;
+    padding: 0px 10px;
+    height: 90px;
+    max-height: 120px;
+}
+
+.roda h1{
+    font-size: 16px;
+}
+
+.rodape{
+    background-color: #F4AE3E;
+    color: #FFF7EE;
+    text-align: center;
+}
+/*fim*/
+
+@media screen and (max-width:1100px) {
+
+    .menu{
+        display: inline;
+        align-items: center;
+    }
+
+    .menu .logo{
+        display: inline;
+        height: 10rem;
+    }
+
+    .menu .logo img{
+        padding: 0rem 2rem;
+    }
+    
+    .menu .menu_desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        padding: 0rem 2rem;
+    }
+
+    .home{
+        display: inline;
+    }
+
+    .banner{
+        padding: 0rem 16rem;
+        height: 15rem;
+        max-height: 100%;
+    }
+
+    .container_qs{
+        display: inline;
+        column-count: 1;
+        padding: -20px;
+    }
+
+    .container_qs h1{
+        text-align: center;
+        padding: -20px;
+    }
+
+    .text_qs{
+        font-size: 0.6rem;
+        text-align: center;
+        
+    }
+    
+    .img_qs img{
+        display: inline;
+        height: 45rem;
+        max-height: 32rem;
+        margin: 0rem 4rem;
+    }
+
+    .container_alu{
+        display: inline;
+    }
+
+    .img_van{
+        display: inline;
+    }
+
+    .img_van img{
+        margin: 0rem 0rem;
+        
+    }
+
+    .roda{
+        display: none;
+    }
+
+    .contato{
+        display: inline;
+        text-align: center;
+
+    }
+
+    .contato .logo{
+        display: inline;
+        margin: 0rem 4rem;
+    }
+    
+    .rodape{
+        background-color: #FEF7F1;
+    }
+
+    .direito{
+        text-align: center;
+        font-size: 0.7rem;
+        color: #F4AE3E;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .roda{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 470px) {
+    .roda{
+        display: none;
+    }
+
+}
